@@ -1,0 +1,705 @@
+html {
+    box-sizing: border-box;
+}
+
+
+* {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+body {
+    font-family: Din;
+    font-size: 14px;
+    text-align: center;
+}
+
+#wrapper_cabins {
+    line-height: 1.2;
+    margin-top: 200px;
+
+}
+
+button {
+    color: #FFF;
+    width: 14.286em;
+    height: 4.286em;
+    background-color: #5B6460;
+    padding: 1.143em 4.286px;
+    font-family: Din;
+
+}
+
+nav {
+    background-color: #FFFFFF;
+}
+
+#conteiner {
+    min-height: 100px;
+    margin-left: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#conteiner span {
+
+    margin-right: 36px;
+}
+
+#appearMenu {
+    display: inline-block;
+
+}
+
+#unvisible {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose {
+    display: none;
+    align-self: center
+}
+
+#appearMenu:hover #unvisible .choose {
+    display: block;
+}
+
+#h:focus #unvisible .choose {
+    display: block;
+}
+
+
+
+
+
+#image {
+    position: relative;
+
+}
+
+#image #text3 {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color: white;
+
+}
+
+#image img {
+    width: 100%;
+    height: auto;
+}
+
+#text1 {
+    font-family: openSansLight;
+    font-size: 5em;
+}
+
+#text2 {
+    font-family: Mulish;
+    font-size: 1.4em;
+    line-height: 0.7;
+    display: block;
+    margin-top: 10px;
+
+}
+
+#introButton {
+    left: 15%;
+    top: 91%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#introButton1 {
+    color: #FFFFFF;
+    background-color: #5B6460;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+
+}
+
+#introButton1 {
+    height: 100%;
+}
+
+#introButton2 {
+    width: 15vw;
+    height: 13vw;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    background-color: #E9ECE0
+}
+
+#introButton1,
+#introButton2 {
+
+    font-family: Din;
+    font-size: 1.286em;
+}
+
+.txtinbt2 {
+    font-size: 0.857em;
+    font-family: Din;
+}
+
+#euro,
+#euro2 {
+    font-size: 1.43em;
+    font-weight: 1000;
+
+}
+
+#from,
+#night,
+#euro {
+    height: 33%;
+}
+
+#from {
+    align-self: flex-start;
+}
+
+#night {
+    align-self: flex-end;
+}
+
+#cabinsImg {
+    float: right;
+    width: 43%;
+    height: 25vw;
+}
+
+#cabinsImg img {
+    height: auto;
+    width: 90%;
+}
+
+#wrapperBut {
+    display: flex;
+    position: relative;
+    height: 13vw;
+}
+
+#cabins {
+    min-height: 450px;
+    margin-left: 40px;
+    color: #5B6460;
+}
+
+#cabins h1 {
+    margin-bottom: 50px;
+    font-family: Regular;
+    font-size: 2.86em;
+}
+
+p {
+    font-size: 1.43em;
+    font-family: openSansLight;
+    color: #000;
+    margin-bottom: 15px;
+
+}
+
+#cabins span {
+    text-underline-offset: 3px;
+    font-family: semiBold;
+    font-size: 1.43em;
+    text-decoration: underline;
+}
+
+
+
+#gallery {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#gallery div img {
+    height: auto;
+    width: 100%;
+}
+
+
+#theForest {
+    position: relative;
+    width: 100%;
+    margin-top: 150px;
+    background-image: url("images/Frame\ 24.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;
+}
+
+
+#Forest h1 {
+    margin-bottom: 50px;
+    font-family: Regular;
+    font-size: 2.86em;
+}
+
+#Forest span {
+    text-underline-offset: 3px;
+    font-family: semiBold;
+    font-size: 1.43em;
+    text-decoration: underline;
+}
+
+#Forest {
+    position: relative;
+    background-color: #E9ECE0;
+    height: 650px;
+    width: 50%;
+    text-align: left;
+}
+
+#forestImg {
+    background-image: url("images/Screen\ Shot\ 2021-02-26\ at\ 16.18\ 1.png");
+    height: 650px;
+    width: 50%;
+    position: relative;
+}
+
+#background {
+    position: absolute;
+    z-index: 0;
+    background-color: #3E443E;
+    opacity: 0.5;
+    height: 650px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#wrapperForest {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+}
+
+#forestImg span {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    padding-top: 65px;
+    text-align: center;
+    position: absolute;
+    left: 280px;
+    top: 230px;
+    height: 180px;
+    background: repeating-radial-gradient(circle at center, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) 50px, rgba(255, 255, 255, 0.5) 50px, rgba(255, 255, 255, 0.5) 70px, rgba(255, 255, 255, 0.25) 70px, rgba(255, 255, 255, 0.25) 90px);
+    font-family: Din;
+    font-size: 0.86em;
+    color: #333;
+    border-radius: 15em;
+    width: 180px;
+}
+
+#content {
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-right: 22%;
+}
+
+#flower {
+    right: 50px;
+    bottom: 100px;
+    position: absolute;
+}
+
+#flower img {
+    height: 150px;
+}
+
+#facilities img {
+    color: white;
+    height: auto;
+
+}
+
+#facilities {
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row-gap: 3vw;
+    grid-column-gap: 4vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapperFacilities {
+    height: 970px;
+    text-align: center;
+    background-color: #5B6460;
+}
+
+#titleFacilities {
+    padding-top: 150px;
+    font-family: openSansLight;
+    font-size: 2.857em;
+    color: white;
+}
+
+#facilities div h1 {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.286em;
+    font-family: Regular;
+}
+
+#afterFacilities {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#mountains {
+    height: inherit;
+    width: 50vw;
+
+}
+
+#mountains img {
+    width: 59.7vw;
+    height: auto;
+}
+
+#people {
+    height: inherit;
+}
+
+#people img {
+    height: auto;
+    width: 50vw;
+}
+
+#moreAbout {
+    font-family: Din;
+    position: absolute;
+    color: #333333;
+    background-color: #E9ECE0;
+    border-radius: 20vw;
+    display: flex;
+    height: 20vw;
+    width: 20vw;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.43em;
+}
+
+#wrapperStay {
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+#leftBlock {
+    margin-right: 10vw;
+    line-height: 1.2;
+    text-align: left;
+    width: 30vw;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+#leftBlock h1 {
+    font-family: Regular;
+    font-size: 2.857em;
+    color: #5B6460;
+}
+
+#wrapperLogo {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Denmark {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+#Phone {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#introButton21 {
+    display: flex;
+}
+
+#footerBox {
+    width: 30vw;
+}
+
+#rightBlock {
+    position: relative;
+    display: inline-block;
+}
+
+#introButton21 {
+    background-color: #E9ECE0;
+    display: flex;
+    width: 35%;
+    height: 100px;
+
+}
+
+#bookHut {
+    background-color: #5B6460;
+    display: flex;
+    align-items: center;
+}
+
+#euro2 {
+    align-self: center;
+}
+
+#night1 {
+    align-self: flex-end;
+}
+
+#from1 {
+    align-self: flex-start;
+}
+
+#Book {
+    display: inline-block;
+    color: white;
+    font-size: 1.28em;
+    margin-right: 5px;
+    margin-left: 50px;
+    width: 65%;
+}
+
+footer {
+    background-color: #5B6460;
+    width: 100%;
+    max-height: 600px;
+}
+
+#leftFooter {
+    align-items: flex-start;
+    text-align: left;
+
+}
+
+#rightFooter {
+    align-items: flex-end;
+    text-align: right;
+
+}
+
+#leftFooter,
+#rightFooter {
+    width: 40%;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 550px;
+
+}
+
+#leftFooter h1 {
+    color: white;
+    font-size: 1.42em;
+    font-family: openSemiBold;
+}
+
+#email,
+#end {
+    font-family: openSansLight;
+    color: #FFF;
+}
+
+#end {
+    font-size: 1em;
+    width: 60%;
+}
+
+#email p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.42em;
+    color: white;
+}
+
+#email input {
+    color: white;
+    background-color: transparent;
+    width: 80%;
+    border: none;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: white;
+    text-underline-offset: 3px;
+    margin-bottom: 2px;
+}
+
+#endText span {
+    display: block;
+}
+
+
+
+.flexImg {
+    width: 100%;
+}
+
+#email {
+    margin-top: 50px;
+}
+
+#flexCards {
+    width: 50%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#endText {
+    font-size: 1em;
+    font-family: Din;
+    color: #FFF;
+}
+
+#emailButton {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer
+}
+
+@media screen and (max-device-width:1100px)and (min-device-width:280px) {
+
+    #forestImg {
+        width: 100%;
+    }
+
+    #Forest {
+        width: 100%;
+    }
+
+    #text1 {
+        font-size: 3.4em;
+    }
+
+
+}
+
+@media screen and (max-device-width:930px) {
+    #wrapperForest {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-device-width:650px) and (min-device-width:481px) {
+    #footerImage img {
+        width: 100vw;
+    }
+
+    body {
+        font-size: 10px
+    }
+
+    #wrapperForest {
+        flex-direction: column;
+    }
+
+    #Forest {
+        min-height: 500px;
+        height: auto;
+    }
+
+    #cabins {
+        min-height: 250px;
+    }
+
+
+
+
+}
+
+@media screen and (max-device-width:480px) and (min-device-width:200px) {
+    #wrapperForest {
+        flex-direction: column;
+    }
+
+    #footerImage img {
+        width: 100vw;
+    }
+
+    #logo2 {
+        width: 40px;
+    }
+
+    #conteiner {
+        margin-left: 5vw;
+    }
+
+    body {
+        font-size: 8px;
+    }
+
+    #wrapper {
+        margin-left: 5px;
+    }
+
+    #appearMenu img {
+        width: 20px;
+    }
+
+    #facilities img {
+        width: 30px;
+
+    }
+
+    #wrapperLogo div img {
+        width: 30px;
+    }
+
+    #text1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-device-width:850px) and (min-device-width:280px) {
+    #forestImg {
+        height: 588px;
+        background-position: -100px;
+        background-size: cover;
+    }
+
+    #forestImg span {
+        left: 118px;
+        top: 109px;
+        padding-top: 80px;
+    }
+}
